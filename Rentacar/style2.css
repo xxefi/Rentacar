@@ -1,0 +1,152 @@
+.header-section {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+.header-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1f36;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+.description-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4f566b;
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  margin-top: 40px;
+  padding: 24px;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.contact-section::before {
+  content: "📞";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 0 15px;
+  font-size: 1.5rem;
+}
+
+.contact-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1f36;
+  margin-bottom: 16px;
+}
+
+.contact-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 10px;
+  font-size: 1.25rem;
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.contact-number {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-number:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .header-section {
+    padding: 24px;
+    margin-bottom: 30px;
+  }
+
+  .header-image {
+    height: 300px;
+    margin-bottom: 24px;
+  }
+
+  .welcome-text {
+    font-size: 1.3rem;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+
+  .contact-numbers {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-number {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-section {
+    padding: 20px;
+  }
+
+  .header-image {
+    height: 200px;
+  }
+
+  .welcome-text {
+    font-size: 1.2rem;
+  }
+
+  .contact-section {
+    padding: 20px;
+  }
+}
