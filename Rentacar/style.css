@@ -90,6 +90,27 @@ a {
   transition: background-color 0.3s ease;
 }
 
+.contact-tiktok-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-tiktok-button:hover {
+  background-color: #69c9d0;
+  transform: scale(1.05);
+}
+
+.contact-tiktok-button img {
+  margin-right: 8px;
+}
+
 .contact-whatsapp-button:hover {
   background-color: #128c7e;
 }
